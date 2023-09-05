@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-2xl shadow-sm bg-body rounded item-center">
+        <div class="container item-center position-relative">
+          <a class="navbar-brand" href="#">
+            <span>Maestro Red Online Smart Hub</span>
+          </a>
+          <div class="p-u">
+            <li>
+                <a href="#" class="programs"><i class='bx bxs-grid-alt'></i>Programs</a>
+            </li>
+            <li>
+                <button id="open-popup" class="universities">Universities</button>
+            </li>
+            <li>
+                <a href="#" class="enquire-now">Enquire Now</a>
+            </li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class='bx bx-menu-alt-right'></i>
+              </button>
+          </div>
+          <div class="collapse navbar-collapse navbar-mobile" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News & Stories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Experience Center</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <div class="side-menu">
+        <ul>
+            <li>
+                <a href="#" class="coulselor">
+                    <i class='bx bx-headphone'></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-phone' ></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxl-whatsapp' ></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-alarm' ></i>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <header class="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 col-text">
+                    <div class="home-text">
+                        <p>
+                            An online education platform that helps you pick
+online degrees, diplomas, or certificates
+from best Universities across the globe.
+                        </p>
+                        <h2>
+                            <strong>Choose what's right for you,</strong>
+                        </h2>
+                        <h1>
+                            <strong>
+                                Right here
+                            </strong>
+                        </h1>
+                        <div class="input-section">
+                            <div class="select-dropdown">
+                                <div class="course-select-now">
+                                    <div class="course-section">
+                                        <select id="Course" name="Course" class="course-select">
+                                            <option value="Masters">Masters</option>
+                                            <option value="Bachelor">Bachelor</option>
+                                            <option value="Diploma">Diploma</option>
+                                            <option value="Certification Courses">Certification Courses</option>
+                                        </select>
+                                    </div>
+                                    <div class="input">
+                                        <input type="text" id="othercourse" class="shadow rounded" name="otherCourse" placeholder="Search..">
+                                    </div>
+                                </div>
+                                <!-- List of items to display -->
+                                <div id="itemList">
+                                    <li>Accounting and Finance at JAIN (Deemed-to-be University)</li>
+                                    <li>International Finance (Accredited by ACCA, UK) at JAIN (Deemed-to-be University)</li>
+                                    <li>Human Resource Management at JAIN (Deemed-to-be University)</li>
+                                    <li>Finance at JAIN (Deemed-to-be University)</li>
+                                    <li>Marketing at JAIN (Deemed-to-be University)</li>
+                                    <li>General Management at JAIN (Deemed-to-be University)</li>
+                                    <li>Systems and Operations Management at JAIN (Deemed-to-be University)</li>
+                                    <li>Finance and Marketing at JAIN (Deemed-to-be University)</li>
+                                    <li>Human Resource Management and Finance at JAIN (Deemed-to-be University)</li>
+                                    <li>Marketing and Human Resource Management at JAIN (Deemed-to-be University)</li>
+                                    <li>Healthcare Management at JAIN (Deemed-to-be University)</li>
+                                    <li>Information Technology Management at JAIN (Deemed-to-be University)</li>
+                                    <li>Logistics and Supply Chain Management at JAIN (Deemed-to-be University)</li>
+                                    <li>International Finance ( Accredited by ACCA, UK) at JAIN (Deemed-to-be University)</li>
+                                    <li>Business Intelligence and Analytics (Accredited by IoA, UK) at JAIN (Deemed-to-be University)</li>
+                                    <li>Project Management at JAIN (Deemed-to-be University)</li>
+                                    <li>Entrepreneurship and Leadership at JAIN (Deemed-to-be University)</li>
+                                    <li>Retail Banking Operations at JAIN (Deemed-to-be University)</li>
+                                    <li>Computer Science and IT at JAIN (Deemed-to-be University)</li>
+                                    <li>Cyber Security in collaboration with TCS at JAIN (Deemed-to-be University)</li>
+                                    <li>Data Analytics (Accredited by IoA, UK) at JAIN (Deemed-to-be University)</li>
+                                    <li>Human Resource Management at Vignan (Deemed-to-be University)</li>
+                                    <li>Finance at Vignan (Deemed-to-be University)</li>
+                                    <li>Marketing at Vignan (Deemed-to-be University)</li>
+                                    <li>Elective in Finance and Human Resource Management at Vignan (Deemed-to-be University)</li>
+                                    <li>Elective in Operations Management at Vignan (Deemed-to-be University)</li>
+                                    <li>Elective in Information Technology at Vignan (Deemed-to-be University)</li>
+                                    <li>Elective in Business Analytics at Vignan (Deemed-to-be University)</li>
+                                    <li>Elective in Logistics and Supply Chain Management at Vignan (Deemed-to-be University)</li>
+                                    <li>Data Science at Vignan (Deemed-to-be University)</li>
+                                    <li>CS & IT at Vignan (Deemed-to-be University)</li>
+                                    <li>International Finance (Accredited by ACCA, UK) at Lovely Professional University</li>
+                                    <li>Marketing Management at D Y Patil University</li>
+                                    <li>Human Resource Management at D Y Patil University</li>
+                                    <li>Finance Management at D Y Patil University</li>
+                                    <li>IT Management at D Y Patil University</li>
+                                    <li>Project Management at D Y Patil University</li>
+                                    <li>Operations Management at D Y Patil University</li>
+                                </div>
+                                <button class="btn-more">
+                                    <a href="#" class="btn-link">Explore More Programs</a>
+                                </button>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 col-img">
+                    <div class="home-img">
+                        <img src="https://learn.online/img/banner-element.2e1bcde2.webp" class="img-fluid home-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="our-presence text-center">
+        <div class="container">
+            <h1 class=" text-center title">Our Presence</h1>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="presence">
+                        <h1>9<span>+</span></h1>
+                        <h5>Universities</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="presence">
+                        <h1>30<span>+</span></h1>
+                        <h5>Online Programs</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="presence">
+                        <h1>100<span>+</span></h1>
+                        <h5>SPECIALIZATION/
+                            ELECTIVE</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="presence">
+                        <h1>45<span>+</span></h1>
+                        <h5>COUNTRY LEARNERS</h5>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6">
+                    <div class="presence">
+                        <h1>50K<span>+</span></h1>
+                        <h5>LEARNERS</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="indian-universities py-5">
+        <div class="container  text-center">
+            <h1 class=" title">INDIAN UNIVERSITIES
+            </h1>
+            <div class="row">
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide shadow rounded">
+                                <img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" >
+                            </div>
+                            <div class="slide shadow rounded">
+                                <img src="https://api.learn.online/media/universities_logo/vignan_zZb1E6K.webp">
+    
+                            </div>
+                            <div class="slide shadow rounded">
+                                <img src="https://api.learn.online/media/universities_logo/LPU.webp">
+    
+                            </div>
+                            <div class="slide shadow rounded">
+                                <img src="https://api.learn.online/media/universities_logo/yenepoya_YF3ex5Q.webp"  >
+                            </div>
+                            <div class="slide shadow rounded">
+                                <img src="https://api.learn.online/media/universities_logo/DPU.webp">
+                            </div>
+                            <div class="slide shadow rounded">
+                                <img src="https://api.learn.online/media/universities_logo/graphic_era_university_logo_o82i5D7.webp"  >
+                            </div>
+                            <div class="slide shadow rounded">
+                                <img src="https://api.learn.online/media/universities_logo/Copy-of-cu-logo.webp"  >
+                            </div>
+                            <div class="slide shadow rounded">
+                                <img src="https://api.learn.online/media/universities_logo/Copy-of-Copy-of-dmms.webp">
+                            </div>
+                            <div class="slide shadow rounded">
+                                <img src="https://api.learn.online/media/universities_logo/MMDU_Logo.webp"  >
+                            </div>
+                        </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    <div class="bachelor-programs">
+        <div class="container text-center">
+            <h1 class="title text-dark">BACHELORS PROGRAMS</h1>
+            <div class="row nav-tab-section">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="BBA-tab" data-bs-toggle="tab" data-bs-target="#BBA" type="button" role="tab" aria-controls="BBA" aria-selected="true">BBA</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="BCA-tab" data-bs-toggle="tab" data-bs-target="#BCA" type="button" role="tab" aria-controls="BCA" aria-selected="false">BCA</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="BCom-tab" data-bs-toggle="tab" data-bs-target="#BCOM" type="button" role="tab" aria-controls="BCOM" aria-selected="false">B.Com</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="BHONS-tab" data-bs-toggle="tab" data-bs-target="#BHONS" type="button" role="tab" aria-controls="BHONS" aria-selected="false">B.Com (HONS.)</button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="BBA" role="tabpanel" aria-labelledby="home-tab">
+                        <h4>BBA <span>(19)</span></span>
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+
+                                  <div class="swiper-slide">
+                                    <div class="card " style="width: 19rem;">
+  <img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+  <div class="universitie-logo">
+    <img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+  </div>
+  
+  <div class="card-body">
+    <h6 class="card-title">BBA in Human Resource Managment</h5>
+    <p class="card-text">JAIN (Deemed-to-be University)</p>
+  </div>
+  <div class="card-button">
+    <a href="#" class="btn"> Download Brochure </a>
+    <a href="#" class="btn">Program</a>
+  </div>
+</div>
+                                  </div>
+
+                                  <div class="swiper-slide">
+                                    <div class="card" style="width: 19rem;">
+  <img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+  <div class="universitie-logo">
+    <img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">BBA in Finance</h5>
+    <p class="card-text">JAIN (Deemed-to-be University)</p>
+  </div>
+  <div class="card-button">
+    <a href="#" class="btn"> Download Brochure </a>
+    <a href="#" class="btn">Program</a>
+  </div>
+</div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card" style="width: 19rem;">
+  <img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+  <div class="universitie-logo">
+    <img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">BBA in Marketing</h5>
+    <p class="card-text">JAIN (Deemed-to-be University)</p>
+  </div>
+  <div class="card-button">
+    <a href="#" class="btn"> Download Brochure </a>
+    <a href="#" class="btn">Program</a>
+  </div>
+</div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card" style="width: 19rem;">
+  <img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+  <div class="universitie-logo">
+    <img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">BBA in Engineering and Project Management</h5>
+    <p class="card-text">D Y Patil University</p>
+  </div>
+  <div class="card-button">
+    <a href="#" class="btn"> Download Brochure </a>
+    <a href="#" class="btn">Program</a>
+  </div>
+</div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card" style="width: 19rem;">
+  <img class="card-img-top" src="https://api.learn.online/media/universities_img/DY-Patil-university.webp" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">BBA in Human Resource Management</h5>
+    <p class="card-text">D Y Patil University</p>
+  </div>
+  <div class="card-button">
+    <a href="#" class="btn"> Download Brochure </a>
+    <a href="#" class="btn">Program</a>
+  </div>
+</div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://api.learn.online/media/universities_img/DY-Patil-university.webp" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">BBA in IT and Systems Management</h5>
+    <p class="card-text">D Y Patil University</p>
+  </div>
+  <div class="card-button">
+    <a href="#" class="btn"> Download Brochure </a>
+    <a href="#" class="btn">Program</a>
+  </div>
+</div>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://api.learn.online/media/universities_img/DY-Patil-university.webp" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">BBA in International Business Management</h5>
+    <p class="card-text">D Y Patil University</p>
+  </div>
+  <div class="card-button">
+    <a href="#" class="btn"> Download Brochure </a>
+    <a href="#" class="btn">Program</a>
+  </div>
+</div>
+                                  </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                              </div>
+                      <a href="#" class="view-all">View All<i class='bx bx-right-arrow-alt'></i></a>
+
+                    </div>       
+                    <div class="tab-pane fade" id="BCA" role="tabpanel" aria-labelledby="BCA-tab">
+                      <h4>BCA  <span>(5)</span></span>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+
+                              <div class="swiper-slide">
+                                <div class="card " style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+<div class="universitie-logo">
+<img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+</div>
+
+<div class="card-body">
+<h6 class="card-title">BBA in Human Resource Managment</h5>
+<p class="card-text">JAIN (Deemed-to-be University)</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                              </div>
+
+                              <div class="swiper-slide">
+                                <div class="card" style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+<div class="universitie-logo">
+<img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+</div>
+<div class="card-body">
+<h5 class="card-title">BBA in Finance</h5>
+<p class="card-text">JAIN (Deemed-to-be University)</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card" style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+<div class="universitie-logo">
+<img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+</div>
+<div class="card-body">
+<h5 class="card-title">BBA in Marketing</h5>
+<p class="card-text">JAIN (Deemed-to-be University)</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card" style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+<div class="universitie-logo">
+<img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+</div>
+<div class="card-body">
+<h5 class="card-title">BBA in Engineering and Project Management</h5>
+<p class="card-text">D Y Patil University</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card" style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/DY-Patil-university.webp" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">BBA in Human Resource Management</h5>
+<p class="card-text">D Y Patil University</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/DY-Patil-university.webp" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">BBA in IT and Systems Management</h5>
+<p class="card-text">D Y Patil University</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/DY-Patil-university.webp" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">BBA in International Business Management</h5>
+<p class="card-text">D Y Patil University</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                              </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                          </div>
+                      <a href="#" class="view-all">View All<i class='bx bx-right-arrow-alt'></i></a>
+
+                </div>
+
+                <div class="tab-pane fade" id="BCOM" role="tabpanel" aria-labelledby="BCom-tab">
+                  <h4>B.Com  <span>(10)</span></h4>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+
+                          <div class="swiper-slide">
+                            <div class="card " style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+<div class="universitie-logo">
+<img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+</div>
+
+<div class="card-body">
+<h6 class="card-title">BBA in Human Resource Managment</h5>
+<p class="card-text">JAIN (Deemed-to-be University)</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                          </div>
+
+                          <div class="swiper-slide">
+                            <div class="card" style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+<div class="universitie-logo">
+<img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+</div>
+<div class="card-body">
+<h5 class="card-title">BBA in Finance</h5>
+<p class="card-text">JAIN (Deemed-to-be University)</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="card" style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+<div class="universitie-logo">
+<img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+</div>
+<div class="card-body">
+<h5 class="card-title">BBA in Marketing</h5>
+<p class="card-text">JAIN (Deemed-to-be University)</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="card" style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+<div class="universitie-logo">
+<img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+</div>
+<div class="card-body">
+<h5 class="card-title">BBA in Engineering and Project Management</h5>
+<p class="card-text">D Y Patil University</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="card" style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/DY-Patil-university.webp" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">BBA in Human Resource Management</h5>
+<p class="card-text">D Y Patil University</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/DY-Patil-university.webp" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">BBA in IT and Systems Management</h5>
+<p class="card-text">D Y Patil University</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/DY-Patil-university.webp" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">BBA in International Business Management</h5>
+<p class="card-text">D Y Patil University</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+                      <a href="#" class="view-all">View All<i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+
+            <div class="tab-pane fade" id="BHONS" role="tabpanel" aria-labelledby="BHONS-tab">
+              <h4>B.Com (Hons)  <span>(4)</span></h4>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide">
+                        <div class="card " style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+<div class="universitie-logo">
+<img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+</div>
+
+<div class="card-body">
+<h6 class="card-title">BBA in Human Resource Managment</h5>
+<p class="card-text">JAIN (Deemed-to-be University)</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="card" style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+<div class="universitie-logo">
+<img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+</div>
+<div class="card-body">
+<h5 class="card-title">BBA in Finance</h5>
+<p class="card-text">JAIN (Deemed-to-be University)</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card" style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+<div class="universitie-logo">
+<img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+</div>
+<div class="card-body">
+<h5 class="card-title">BBA in Marketing</h5>
+<p class="card-text">JAIN (Deemed-to-be University)</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card" style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/jainUniversity.webp" alt="Card image cap">
+<div class="universitie-logo">
+<img src="https://api.learn.online/media/universities_logo/JO_logo_HCdalkT.webp" class="ul">
+</div>
+<div class="card-body">
+<h5 class="card-title">BBA in Engineering and Project Management</h5>
+<p class="card-text">D Y Patil University</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card" style="width: 19rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/DY-Patil-university.webp" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">BBA in Human Resource Management</h5>
+<p class="card-text">D Y Patil University</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/DY-Patil-university.webp" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">BBA in IT and Systems Management</h5>
+<p class="card-text">D Y Patil University</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card" style="width: 18rem;">
+<img class="card-img-top" src="https://api.learn.online/media/universities_img/DY-Patil-university.webp" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">BBA in International Business Management</h5>
+<p class="card-text">D Y Patil University</p>
+</div>
+<div class="card-button">
+<a href="#" class="btn"> Download Brochure </a>
+<a href="#" class="btn">Program</a>
+</div>
+</div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                  <a href="#" class="view-all">View All<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+                    </div>
+
+
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="our-presence text-center">
+      <div class="container">
+          <h1 class=" text-center title">REASONS TO CHOOSE LEARN.ONLINE</h1>
+          <div class="row">
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="presence">
+                    <img src="https://learn.online/img/Curation.71af50a9.png" width="60">
+                      <h5>Universities</h5>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="presence">
+                      <h1>30<span>+</span></h1>
+                      <h5>Online Programs</h5>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="presence">
+                      <h1>100<span>+</span></h1>
+                      <h5>SPECIALIZATION/
+                          ELECTIVE</h5>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="presence">
+                      <h1>45<span>+</span></h1>
+                      <h5>COUNTRY LEARNERS</h5>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-4 col-sm-6">
+                  <div class="presence">
+                      <h1>50K<span>+</span></h1>
+                      <h5>LEARNERS</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script>
+            var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+            breakpoints: {
+              "@0.00": {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              "@0.75": {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              "@1.00": {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              "@1.50": {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
+            },
+          });
+</script>
